@@ -31,7 +31,7 @@ class vector{
         void pop_back(){
         float load_factor = float(size)/float(capacity);
         cout<<load_factor<<endl;
-        if(load_factor >= 0.5){
+        if(load_factor >= 0.25){
         size--;
         }
         else{
@@ -68,7 +68,14 @@ int main(){
     v.pop_back();
     v.pop_back();
     v.pop_back();
+    v.pop_back();
+    v.pop_back();
+    v.pop_back();
+    v.pop_back();
     cout<<v.capacity<<endl;
+    v.push_back(4);
+    v.push_back(6);
+    v.push_back(8);
     v.push_back(4);
     v.push_back(6);
     v.push_back(8);
